@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Gallery Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script scr="{% static 'js/bootstrap.min.js' %}"> </script>
+</head>
+<body>
+<h1> MY GALLERY </h1>
+<a href="{% url 'about' %}" class="btn btn-outline-primary"> About </a>
+<a href="{% url 'home' %}" class="btn btn-warning"> home </a>
+<a href="{% url 'contact' %}" class="btn btn-outline-danger"> contact </a>
+<br>
+<br>
+<br>
+
+<img src="{% static 'images/6th.jpeg'  %}"alt="">
+<img src="{% static 'images/7th.jpeg'  %}"alt="">
+<img src="{% static 'images/9th.jpeg'  %}"alt="">
+<img src="{% static 'images/8th.jpeg'  %}"alt="">
+<img src="{% static 'images/first.jpeg'  %}"alt="">
+<img src="{% static 'images/third.jpeg'  %}"alt="">
+</body>
+</html>
